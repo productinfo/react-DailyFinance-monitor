@@ -1,0 +1,33 @@
+{
+  "name": "DailyFinance-monitor",
+  "version": "0.0.1",
+  "description": "To view all registered users for DailyFinance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LeoAJ/DailyFinance-monitor.git"
+  },
+  "author": "Leo Hsieh",
+  "license": "BSD",
+  "dependencies": {
+    "konphyg": "~1.2.3",
+    "express": "~3.3.4",
+    "mongoose": "~3.6.20",
+    "sugar": "~1.4.1"
+  },
+  "devDependencies": {
+    "matchdep": "~0.1.2",
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-concurrent": "~0.4.0",
+    "grunt-jsbeautifier": "~0.2.2",
+    "grunt-open": "~0.2.2",
+    "grunt-express": "~1.2.1"
+  }
+}

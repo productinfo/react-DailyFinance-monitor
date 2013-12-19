@@ -1,0 +1,7 @@
+{
+  "port": "1992",
+  "client": "client",
+  "server": "server/lib",
+  "target": ".tmp",
+  "mongodbUrl": "mongodb://localhost/test"
+}
