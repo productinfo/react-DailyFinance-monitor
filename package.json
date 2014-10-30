@@ -1,17 +1,17 @@
 {
-  "name": "DailyFinance-monitor",
+  "name": "DailyFinance-monitor-react",
   "version": "0.0.1",
-  "description": "To view all registered users for DailyFinance",
+  "description": "To view all registered users for DailyFinance --- react version",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/LeoAJ/DailyFinance-monitor.git"
+    "url": "git@github.com:LeoAJ/DailyFinance-monitor-react.git"
   },
-  "author": "Leo Hsieh",
-  "license": "BSD",
+  "author": {
+    "name": "Leo Hsieh",
+    "url": "http://leoj.net"
+  },
+  "license": "MIT",
   "dependencies": {
     "konphyg": "~1.2.3",
     "express": "~3.3.4",
@@ -19,15 +19,20 @@
     "sugar": "~1.4.1"
   },
   "devDependencies": {
-    "matchdep": "~0.1.2",
+    "del": "^0.1.3",
     "grunt": "~0.4.1",
+    "grunt-concurrent": "~0.4.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-compass": "~0.6.0",
     "grunt-contrib-jshint": "~0.6.4",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-compass": "~0.6.0",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-concurrent": "~0.4.0",
+    "grunt-express": "~1.2.1",
     "grunt-jsbeautifier": "~0.2.2",
     "grunt-open": "~0.2.2",
-    "grunt-express": "~1.2.1"
+    "gulp": "^3.8.9",
+    "gulp-jshint": "^1.8.6",
+    "gulp-load-plugins": "^0.7.0",
+    "jshint-stylish": "^1.0.0",
+    "matchdep": "~0.1.2"
   }
 }

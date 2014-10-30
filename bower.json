@@ -1,5 +1,5 @@
 {
-  "name": "DailyFinance-Monitor-client",
+  "name": "DailyFinance-monitor-react",
   "version": "0.0.1",
   "dependencies": {
     "angular": "1.2.3",

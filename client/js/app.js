@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('DailyFinanceMonitorApp', [
-  'ngRoute',
-  'ngResource'
-])
+    'ngRoute',
+    'ngResource'
+  ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
