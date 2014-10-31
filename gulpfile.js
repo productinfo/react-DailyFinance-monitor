@@ -16,21 +16,12 @@ gulp.task('clean:tmp', function () {
   del(['.tmp']);
 });
 
+gulp.task('build', ['jshint']);
 
-// for development usage
-// 'clean:server',
-// 'concurrent:server',
-// 'express:livereload',
-// 'open',
-// 'watch'
-gulp.task('server', ['clean:tmp']);
 
-// for deploying on production instance
-// 'clean:server',
-// 'concurrent:dist',
-// 'express:dist',
-// 'express-keepalive'
-gulp.task('deploy', ['jshint']);
+gulp.task('dev', function () {
+  console.log('TBD...');
+});
 
 // check code
-gulp.task('default', ['jshint']);
+gulp.task('default', ['dev']);
