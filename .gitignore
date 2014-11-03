@@ -42,8 +42,7 @@ npm-debug.log
 node_modules
 
 ### DailyFinanceApp ###
-.tmp
-.sass-cache
+dist
 client/bower_components
+client/css/main.css
 server/email/setting.js
-coverage

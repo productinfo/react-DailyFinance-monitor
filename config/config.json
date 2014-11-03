@@ -2,6 +2,6 @@
   "port": "1992",
   "client": "client",
   "server": "server/lib",
-  "target": ".tmp",
+  "dist": "dist",
   "mongodbUrl": "** Your MongoDB URL **"
 }
