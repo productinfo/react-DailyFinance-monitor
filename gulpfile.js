@@ -48,7 +48,7 @@ gulp.task('minify-html', function() {
       .pipe(gulp.dest(config.dist + '/views'));
 });
 
-// jshint ...
+// jshint
 gulp.task('lint', function () {
   return gulp.src(['gulpfile.js', 'server/lib/*.*', 'client/js/*.*'])
              .pipe(plugins.jshint())

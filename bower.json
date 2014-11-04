@@ -2,14 +2,7 @@
   "name": "DailyFinance-monitor-react",
   "version": "0.0.1",
   "dependencies": {
-    "angular": "1.2.3",
-    "angular-mocks": "1.2.3",
-    "angular-route": "1.2.3",
-    "angular-resource": "1.2.3",
-    "angular-bootstrap": "~0.7.0",
-    "bowser": "*",
     "bootstrap-sass-official": "~3.3.0",
-    "chai": "~1.8.1",
-    "sugar": "~1.4.1"
+    "react": "~0.12.0"
   }
 }

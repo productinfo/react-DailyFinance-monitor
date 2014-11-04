@@ -9,24 +9,18 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="description" content="Daily Finance Web App">
+  <meta name="description" content="Daily Finance Web App React Version">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/main.css">
-  <title>DailyFinance Monitor</title>
+  <title>DailyFinance Monitor - React</title>
 </head>
 
-<body ng-app="DailyFinanceMonitorApp">
+<body>
   <a class="visible-lg" target="_blank" href="https://github.com/LeoAJ/DailyFinance-monitor">
     <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
   </a>
-  <div ng-view=""></div>
-  <script src="bower_components/sugar/release/sugar.min.js"></script>
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.min.js"></script>
-  <script src="bower_components/angular-resource/angular-resource.min.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/controller/main.js"></script>
-  <script src="js/services/api.js"></script>
+  <div id="container"></div>
+  <script src="bower_components/react/react.min.js"></script>
 </body>
 
 </html>
