@@ -7,16 +7,23 @@
     "type": "git",
     "url": "git@github.com:LeoAJ/DailyFinance-monitor-react.git"
   },
+  "keywords": [
+    "webpack",
+    "react",
+    "gulp",
+    "bootstrap",
+    "express"
+  ],
   "author": {
     "name": "Leo Hsieh",
     "url": "http://leoj.net"
   },
   "license": "MIT",
   "dependencies": {
-    "konphyg": "~1.4.0",
     "express": "~4.10.1",
+    "konphyg": "~1.4.0",
     "mongoose": "~3.8.18",
-    "sugar": "~1.4.1"
+    "webpack": "^1.4.13"
   },
   "devDependencies": {
     "del": "^0.1.3",
@@ -39,6 +46,7 @@
     "gulp-sass": "^1.2.2",
     "gulp-uglify": "^1.0.1",
     "jshint-stylish": "^1.0.0",
-    "matchdep": "~0.1.2"
+    "matchdep": "~0.1.2",
+    "webpack-dev-server": "^1.6.5"
   }
 }
