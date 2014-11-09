@@ -1,11 +1,11 @@
 {
-  "name": "DailyFinance-monitor-react",
+  "name": "react-DailyFinance-monitor",
   "version": "0.0.1",
   "description": "To view all registered users for DailyFinance --- react version",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:LeoAJ/DailyFinance-monitor-react.git"
+    "url": "git@github.com:LeoAJ/react-DailyFinance-monitor.git"
   },
   "keywords": [
     "webpack",

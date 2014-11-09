@@ -1,5 +1,5 @@
 {
-  "name": "DailyFinance-monitor-react",
+  "name": "react-DailyFinance-monitor",
   "version": "0.0.1",
   "dependencies": {
     "bootstrap-sass-official": "~3.3.0",
