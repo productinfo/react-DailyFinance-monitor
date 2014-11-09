@@ -76,7 +76,7 @@ gulp.task('nodemon', function () {
   plugins.nodemon({
     script: 'server/lib/index.js'
   })
-  .on('change', ['lint'])
+  .on('change', ['react:dev'])
   .on('restart', function () {
     console.log('restarted!');
   });

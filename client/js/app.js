@@ -1,4 +1,8 @@
+var MainTable = React.createClass({
+  
+});
+
 React.render(
-  <h1>HELLO</h1>,
+  <MainTable />,
   document.querySelector('#container')
 );
