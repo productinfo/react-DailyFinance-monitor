@@ -3,20 +3,19 @@
 var path = require('path'),
   express = require('express'),
   mongoose = require('mongoose'),
-  configLoader = require('konphyg')(path.resolve(__dirname, '../../config')),
-  config = configLoader('config'),
   app = express();
 
-mongoose.connect(config.mongodbUrl);
+mongoose.connect('mongodb://localhost/test');
 
 require('./api')(app);
 
 app.use('/', express.static(path.join(__dirname, '../../client')));
 
-console.log('*--------------------------------------------------*');
-console.log('* Express server listening on port: ', config.port);
-console.log('* connected to database: ', config.mongodbUrl);
-console.log('*--------------------------------------------------*');
+app.listen(1992);
 
-app.listen(config.port);
 module.exports = app;
+
+console.log('*--------------------------------------------------*');
+console.log('* Express server listening on port: 1992');
+console.log('* connected to database: mongodb://localhost/test');
+console.log('*--------------------------------------------------*');

@@ -1,7 +1,0 @@
-{
-  "port": "1992",
-  "client": "client",
-  "server": "server/lib",
-  "dist": "dist",
-  "mongodbUrl": "** Your MongoDB URL **"
-}

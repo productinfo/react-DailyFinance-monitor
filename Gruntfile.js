@@ -102,20 +102,6 @@ exports = module.exports = function (grunt) {
         'Gruntfile.js',
         'index.js'
       ]
-    },
-    jsbeautifier: {
-      options: {
-        config: '.jsbeautifyrc'
-      },
-      build: {
-        src: ['Gruntfile.js', 'client/**/*.{js,json,css,html}', '!client/bower_components/**/*.*', 'server/*.*']
-      },
-      ci: {
-        src: ['Gruntfile.js', 'client/**/*.{js,json,css,html}', '!client/bower_components/**/*.*', 'server/*.*'],
-        options: {
-          mode: 'VERIFY_ONLY'
-        }
-      }
     }
   });
 
@@ -137,8 +123,6 @@ exports = module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
-    'jsbeautifier:build',
-    'jsbeautifier:ci',
     'jshint'
   ]);
 

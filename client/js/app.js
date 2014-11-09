@@ -1,17 +1,4 @@
-'use strict';
-
-angular.module('DailyFinanceMonitorApp', [
-    'ngRoute',
-    'ngResource'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        title: 'Main',
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+React.render(
+  <h1>HELLO</h1>,
+  document.querySelector('#container')
+);

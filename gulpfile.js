@@ -4,16 +4,21 @@ var gulp = require('gulp'),
     del = require('del'),
     gulpLoadPlugins = require('gulp-load-plugins'),
     plugins = gulpLoadPlugins(),
-    stylish = require('jshint-stylish'),
-    configLoader = require('konphyg')(__dirname + '/config'),
-    config = configLoader('config');
+    stylish = require('jshint-stylish');
 
 // open localhost
 gulp.task('open', function(){
   gulp.src('./client/index.html')
   .pipe(plugins.open('', {
-    url: 'http://localhost:' + config.port
+    url: 'http://localhost:1992'
   }));
+});
+
+// precompile jsx for dev
+gulp.task('react:dev', function () {
+  gulp.src('client/js/*.js')
+      .pipe(plugins.react())
+      .pipe(gulp.dest('client/build'));
 });
 
 // compile SASS
@@ -27,25 +32,25 @@ gulp.task('sass', function () {
 gulp.task('minify-css', function () {
   gulp.src('client/css/main.css')
       .pipe(plugins.minifyCss())
-      .pipe(gulp.dest(config.dist + '/css'));
+      .pipe(gulp.dest('dist/css'));
 });
 
 // minify JS
 gulp.task('minify-js', function() {
   gulp.src('client/js/**/*.js')
       .pipe(plugins.uglify({ mangle: false }))
-      .pipe(gulp.dest(config.dist + '/js'));
+      .pipe(gulp.dest('dist/js'));
 });
 
 // minify HTML
 gulp.task('minify-html', function() {
   gulp.src('client/index.html')
       .pipe(plugins.minifyHtml({ collapseWhitespace: true }))
-      .pipe(gulp.dest(config.dist));
+      .pipe(gulp.dest('dist'));
 
   gulp.src('client/views/*.html')
       .pipe(plugins.minifyHtml({ collapseWhitespace: true }))
-      .pipe(gulp.dest(config.dist + '/views'));
+      .pipe(gulp.dest('dist/views'));
 });
 
 // jshint
@@ -56,13 +61,13 @@ gulp.task('lint', function () {
 });
 
 gulp.task('clean', function (cb) {
-  del([config.dist], cb);
+  del(['dist'], cb);
 });
 
 // copy bower_components folder to dist
 gulp.task('copy', function(){
   return gulp.src('client/bower_components/**')
-    .pipe(gulp.dest(config.dist + '/bower_components'));
+    .pipe(gulp.dest('dist/bower_components'));
 });
 
 // nodemon task
@@ -89,7 +94,7 @@ gulp.task('dist', ['lint', 'clean'], function () {
 gulp.task('prod', ['dist', 'dev']);
 
 // develop build
-gulp.task('dev', ['nodemon', 'open']);
+gulp.task('dev', ['react:dev', 'nodemon', 'open']);
 
 // default
 gulp.task('default', ['dev']);

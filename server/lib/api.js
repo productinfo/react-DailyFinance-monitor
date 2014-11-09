@@ -8,7 +8,7 @@ module.exports = function (app) {
     UserModel.find(function (err, rawData) {
       if (err) {
         console.log(err);
-        res.send(500);
+        res.status(500).end();
       }
       var data = [];
       rawData.forEach(function (value) {
