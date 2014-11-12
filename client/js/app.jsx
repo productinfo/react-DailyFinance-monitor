@@ -31,14 +31,26 @@ var data = [
 
 var MainTable = React.createClass({
   
+  // Invoked once, on both client & server before rendering occurs
   componentWillMount: function () {
-    console.log('componentWillMount');
-    console.log(this.state.data);
+    var self = this;
+    $.ajax({
+      method: 'GET',
+      url: '/api'
+    })
+    .done(function (data) {
+      self.setState({
+        data: data
+      });
+    })
+    .fail(function (err) {
+      console.log(err);
+    });
   },
 
   getInitialState: function () {
     return {
-      data: data
+      data: []
     };
   },
 

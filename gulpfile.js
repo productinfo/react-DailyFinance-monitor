@@ -16,7 +16,7 @@ gulp.task('open', function(){
 
 // precompile jsx for dev
 gulp.task('react:dev', function () {
-  gulp.src('client/js/*.js')
+  gulp.src('client/js/*.jsx')
       .pipe(plugins.react())
       .pipe(gulp.dest('client/build'));
 });
