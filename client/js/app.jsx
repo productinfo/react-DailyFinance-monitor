@@ -1,34 +1,3 @@
-var data = [
-  {
-    "name": "Ko-wei Ma",
-    "email": "kwma313@hotmail.com"
-  },
-  {
-    "name": "Lucas",
-    "email": "icrtiou@gmail.com"
-  },
-  {
-    "name": "Will Ding",
-    "email": "fly_windchild@hotmail.com"
-  },
-  {
-    "name": "tg",
-    "email": "dgjdqqj+t0bil0@sharklasers.com"
-  },
-  {
-    "name": "tg",
-    "email": "dgjdqqj+t0bil0@sharklasers.com"
-  },
-  {
-    "name": "Leo",
-    "email": "leo0924@gmail.com"
-  },
-  {
-    "name": "Roshan",
-    "email": "icemission@gmail.com"
-  }
-];
-
 var MainTable = React.createClass({
   
   // Invoked once, on both client & server before rendering occurs
