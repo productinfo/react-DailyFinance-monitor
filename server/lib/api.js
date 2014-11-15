@@ -1,6 +1,5 @@
 'use strict';
 
-require('sugar');
 var UserModel = require('../mongodb/model/user').UserModel;
 
 module.exports = function (app) {
