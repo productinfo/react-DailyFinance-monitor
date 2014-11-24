@@ -11,3 +11,6 @@ MIT
 ## Release History
 
 * 2014-10-29 `v0.0.1` Initialize
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/LeoAJ/react-dailyfinance-monitor/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
