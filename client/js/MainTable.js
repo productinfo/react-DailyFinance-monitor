@@ -2,6 +2,7 @@
 var TableRow = require('./TableRow');
 var React = require('react');
 
+require('./css/main.css');
 
 var MainTable = React.createClass({
   
