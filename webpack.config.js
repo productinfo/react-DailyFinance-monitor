@@ -5,10 +5,13 @@ module.exports = {
   },
   module: {
     loaders: [
+      { test: /\.woff$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
+      { test: /\.ttf$/, loader: "file-loader" },
+      { test: /\.eot$/, loader: "file-loader" },
+      { test: /\.svg$/, loader: "file-loader" },
       { test: /\.js$/, loader: 'jsx-loader?harmony' },
       { test: /\.less$/, loader: 'style-loader!css-loader!less-loader' },
-      { test: /\.css$/, loader: 'style-loader!css-loader' },
-      {test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'} // inline base64 URLs for <=8k images, direct URLs for the rest
+      { test: /\.css$/, loader: 'style-loader!css-loader' }
     ]
   }
 };
