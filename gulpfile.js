@@ -82,6 +82,12 @@ gulp.task('nodemon', function () {
   });
 });
 
+gulp.task('webpack', function() {
+  return gulp.src('client/js/main.js')
+    .pipe(plugins.webpack(require('./webpack.config.js')))
+    .pipe(gulp.dest('dist/'));
+});
+
 // build and minify code
 gulp.task('build', ['copy', 'sass', 'minify-css', 'minify-js', 'minify-html']);
 
