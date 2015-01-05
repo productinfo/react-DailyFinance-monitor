@@ -1,5 +1,7 @@
 var React = require('react');
 
+require('../css/main.css');
+
 var TableRow = React.createClass({
   render: function () {
     return (
