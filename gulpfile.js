@@ -85,7 +85,7 @@ gulp.task('nodemon', function () {
 gulp.task('webpack', function() {
   return gulp.src('client/js/main.js')
     .pipe(plugins.webpack(require('./webpack.config.js')))
-    .pipe(gulp.dest('dist/'));
+    .pipe(gulp.dest('client/dist/'));
 });
 
 // build and minify code
@@ -100,7 +100,7 @@ gulp.task('dist', ['lint', 'clean'], function () {
 gulp.task('prod', ['dist', 'dev']);
 
 // develop build
-gulp.task('dev', ['react:dev', 'nodemon', 'open']);
+gulp.task('dev', ['nodemon', 'open']);
 
 // default
 gulp.task('default', ['dev']);
