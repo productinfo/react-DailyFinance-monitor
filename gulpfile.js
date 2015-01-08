@@ -100,7 +100,7 @@ gulp.task('dist', ['lint', 'clean'], function () {
 gulp.task('prod', ['dist', 'dev']);
 
 // develop build
-gulp.task('dev', ['nodemon', 'open']);
+gulp.task('dev', ['webpack', 'nodemon', 'open']);
 
 // default
 gulp.task('default', ['dev']);
