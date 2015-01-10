@@ -1,6 +1,6 @@
 
-var MainTable = require('./MainTable');
-var React = require('react');
+var MainTable = require('./MainTable'),
+    React = require('react');
 
 React.render(
   <MainTable />,
