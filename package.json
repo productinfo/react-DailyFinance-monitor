@@ -23,7 +23,7 @@
   "dependencies": {
     "express": "~4.10.1",
     "mongoose": "~3.8.18",
-    "webpack": "^1.4.13"
+    "webpack": "^2.2.0"
   },
   "devDependencies": {
     "bundle-loader": "^0.5.2",
